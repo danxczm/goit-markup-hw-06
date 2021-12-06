@@ -4,6 +4,7 @@
 	--secondary-bg-color: #f5f4fa;
 	--design-bg-color: #2f303a;
 	--accent-color: #2196f3;
+	--hover-accent-color: #188ce8;
 	--wite-bg-color: #ffffff;
 	--white-text-color: #ffffff;
 	--icons-color: #afb1b8;
@@ -321,6 +322,74 @@ img {
 	background-color: var(--accent-color);
 }
 
+.footer-subscribe {
+margin-left: auto;
+}
+
+.footer-subscribe-title {
+	margin-bottom: 20px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--white-text-color);
+}
+
+.footer-subscribe-wrap {
+	display: flex;
+}
+
+.footer-subscribe-input {
+	width: 358px;
+	height: 50px;
+
+	padding: 15px 16px;
+
+	background-color: inherit;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	outline: none;
+
+	color: var(--white-text-color)
+}
+
+.footer-subscribe-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-left: 12px;
+
+	min-width: 200px;
+	height: 50px;
+
+	background-color: var(--accent-color);
+	color: var(--white-text-color);
+	border-radius: 4px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.8;
+	letter-spacing: 0.06em;
+
+	transition: background-color 250ms var(--cubic-value);
+}
+
+.footer-subscribe-icon {
+	margin-left: 10px;
+	fill: #ffffff;
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+	background-color: var(--hover-accent-color);
+}
+
+
 /* ----------------"Студия" page CSS---------------- */
 
 /* ----------------HERO SECTION---------------- */
@@ -374,7 +443,7 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-	background-color: #188ce8;
+	background-color: var(--hover-accent-color);
 }
 
 .hero-backdrop {
@@ -405,7 +474,7 @@ img {
 	transform: scale(1) translate(-50%, -50%);
 }
 
-.hero-modal-button {
+.hero-modal-close {
 	position: absolute;
 	top: 7px;
 	right: 7px;
@@ -425,8 +494,8 @@ img {
 	transition: fill 250ms var(--cubic-value);
 }
 
-.hero-modal-button:hover,
-.hero-modal-button:focus {
+.hero-modal-close:hover,
+.hero-modal-close:focus {
 	fill: currentColor;
 }
 
@@ -536,7 +605,7 @@ img {
 	color: var(--secondary-text-color);
 }
 
-.modal-policy span {
+.modal-policy .policy-icon {
 	display: flex;
 	align-items: center;
 
@@ -551,7 +620,7 @@ img {
 	fill: #ffffff;
 }
 
-.modal-policy-check:checked + .modal-policy span {
+.modal-policy-check:checked + .modal-policy .policy-icon {
 	background-color: var(--accent-color);
 	border: none;
 }
@@ -562,6 +631,30 @@ img {
 	letter-spacing: 0.03em;
 	text-decoration-skip-ink: none;
 	color: var(--accent-color);
+}
+
+.hero-modal-submit {
+	padding: 10px 55px;
+	min-width: 200px;
+
+	background-color: var(--accent-color);
+	color: var(--white-text-color);
+	border-radius: 4px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.8;
+	letter-spacing: 0.06em;
+	
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	transition: background-color 250ms var(--cubic-value),box-shadow 250ms var(--cubic-value);
+}
+
+.hero-modal-submit:hover,
+.hero-modal-submit:focus {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+	background-color: var(--hover-accent-color);
 }
 
 .is-hidden {

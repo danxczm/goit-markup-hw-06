@@ -117,17 +117,21 @@
             <div class="hero-modal-policy">
               <input class="modal-policy-check visually-hidden" type="checkbox" name="online-policy" id="online-policy">
               <label class="modal-policy" for="online-policy">
-                <span><svg class="policy-icon-check" width="16" height="15">
-                  <use href="./images/icons.svg#check"></use>
-                </svg></span>Соглашаюсь с рассылкой и принимаю&nbsp;</label>
+                <span class="policy-icon">
+                  <svg class="policy-icon-check" width="16" height="15">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
+                </span>
+                <span>Соглашаюсь с рассылкой и принимаю&nbsp;</span>
+              </label>
               <a class="modal-link" href="">Условия договора</a>
             </div>
 
-            <button type="submit" class="hero-button">Отправить</button>
+            <button type="submit" class="hero-modal-submit">Отправить</button>
             
             </form>
 
-            <button type="button" class="hero-modal-button" data-modal-close>
+            <button type="button" class="hero-modal-close" data-modal-close>
               <svg class="hero-modal-icon" width="11" height="11">
                     <use href="./images/icons.svg#close"></use>
                   </svg>
@@ -565,7 +569,18 @@
 
           </ul>
         </div>
-
+        
+        <div class="footer-subscribe">
+          <h3 class="footer-subscribe-title">Подпишитесь на рассылку</h3>
+          <div class="footer-subscribe-wrap">
+            <input class="footer-subscribe-input" type="email" name="submail" placeholder="E-mail">
+            <button class="footer-subscribe-button" type="submit">Подписаться
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
