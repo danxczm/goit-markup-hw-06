@@ -327,6 +327,7 @@ margin-left: auto;
 }
 
 .footer-subscribe-title {
+	display: block;
 	margin-bottom: 20px;
 
 	font-weight: 700;
@@ -476,8 +477,8 @@ margin-left: auto;
 
 .hero-modal-close {
 	position: absolute;
-	top: 7px;
-	right: 7px;
+	top: 8px;
+	right: 8px;
 
 	display: flex;
 	align-items: center;
@@ -500,6 +501,7 @@ margin-left: auto;
 }
 
 .hero-modal-title {
+	display: block;
 	margin-bottom: 12px;
 
 	font-weight: 700;
@@ -623,6 +625,7 @@ margin-left: auto;
 .modal-policy-check:checked + .modal-policy .policy-icon {
 	background-color: var(--accent-color);
 	border: none;
+	transition: background-color 250ms var(--cubic-value);
 }
 
 .modal-link {
